@@ -8,6 +8,7 @@
         color-scheme: dark;
         display: grid;
         place-content: center;
+        position: relative;
     }
 
     .poster_url {

@@ -4,6 +4,12 @@ declare(strict_types=1); // activa el modo estricto para tipos, siempre arriba d
 
 const API_URL = "https://whenisthenextmcufilm.com/api";
 
+function render_template(string $template, array $data = [])
+{
+    extract($data);
+    require "./templates/$template.php";
+}
+
 function get_data(string $url): array
 {
     $res = file_get_contents($url);
